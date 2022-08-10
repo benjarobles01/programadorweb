@@ -2,3 +2,7 @@ galletitas
 pan
 mayonesa
 limpieza
+manzana 
+mandarina 
+uva
+
