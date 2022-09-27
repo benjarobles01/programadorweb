@@ -1,34 +1,35 @@
-p{
+p {
     color: blue;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: bold;
 }
 
-h2{
+h2 {
     color: brown;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
     text-align: center;
-    text-shadow: -1px 13px 2px rgba(0,0,0,0.6);
-}
-h1{
-    font-style: italic;
-    text-align: center;
-    
+    text-shadow: -1px 13px 2px rgba(0, 0, 0, 0.6);
 }
 
-.caja{
+h1 {
+    font-style: italic;
+    text-align: center;
+
+}
+
+.caja {
     width: 200px;
     height: 200px;
     background-color: blueviolet;
-    box-shadow: -1px 108px 194px -8px rgba(0,0,0,0.46);
+    box-shadow: -1px 108px 194px -8px rgba(0, 0, 0, 0.46);
     border: 9px double #ff6550;
-   
+
 }
-.destacados{
+
+.destacados {
     color: chartreuse;
     font-style: italic;
 
 }
-
