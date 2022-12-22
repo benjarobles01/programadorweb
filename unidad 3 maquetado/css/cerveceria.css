@@ -47,3 +47,8 @@ html {
 .scroll_section {
     scroll-margin-top: 60px;
 }
+
+#truco {
+opacity: 0;
+}
+    

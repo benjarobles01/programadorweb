@@ -132,26 +132,26 @@
 </div>
 </div>
 
-
+<section class="contact"> 
 <h2>Contactanos</h2>
-<form class="row g-3">
+<form id="form" action="" class="row g-3">
   <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <label for="Email" class="form-label">Email</label>
+    <input name="Email"type="email" class="form-control" id="inputEmail4">
   </div>
   
   <div class="col-md-6">
-    <label for="inputAddress" class="form-label">Direccion</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="">
+    <label for="Direccion" class="form-label">Direccion</label>
+    <input name="Direccion" type="text" class="form-control" id="inputAddress" placeholder="">
   </div>
 
   <div class="col-md-6">
-    <label for="inputCity" class="form-label">Ciudad</label>
-    <input type="text" class="form-control" id="inputCity">
+    <label for="Ciudad" class="form-label">Ciudad</label>
+    <input name="Ciudad" type="text" class="form-control" id="inputCity">
   </div>
   <div class="col-md-4">
-    <label for="inputState" class="form-label">Provincia</label>
-    <select id="inputState" class="form-select">
+    <label for="Provincia" class="form-label">Provincia</label>
+    <select id="Provincia" class="form-select">
       <option selected></option>
       <option>CABA</option> 
       <option>Buenos Aires</option> 
@@ -180,7 +180,7 @@
   </div>
   <div class="col-md-2">
     <label for="inputZip" class="form-label">Codigo Postal</label>
-    <input type="text" class="form-control" id="inputZip">
+    <input name="Codigo Postal" type="text" class="form-control" id="inputZip">
   </div>
   <div class="col-12">
    
@@ -188,9 +188,24 @@
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Enviar</button>
   </div>
+</section>
 </form>
+<a href="mailto:benja.robles01@gmail.com" id="truco">mail</a>
+<script>
 
+const $form = document.querySelector('#form')
+const $boton = document.querySelector('#truco')
 
+$form.addEventListener('submit',handleSubmit )
+function handleSubmit(event) {
+event.preventDefault()
+const form = new FormData(this)
+
+$boton.setAttribute('href', 'mailto:benja.robles01@gmail.com?subject=${form.get('Email')}${form.get('Direccion')} &body${form.get('Codigo postal')')
+$boton.click()
+}
+
+</script>
 
 
 
